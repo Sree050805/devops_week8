@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+
+            /* Center everything */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 350px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form method="POST" action="/" autocomplete="off">
+
+        <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text"
+                   placeholder="Enter your name" required>
+        </div>
+
+        <div class="field">
+            <label for="roll">Roll Number</label>
+            <input id="roll" name="roll" type="text"
+                   placeholder="Enter roll number" required>
+        </div>
+
+        <div class="field">
+            <label for="year">Year</label>
+            <input id="year" name="year" type="number"
+                   min="1" max="9999"
+                   placeholder="Enter year" required>
+        </div>
+
+        <div class="field">
+            <label for="branch">Branch</label>
+            <input id="branch" name="branch" type="text"
+                   placeholder="Enter branch" required>
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
